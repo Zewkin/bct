@@ -47,4 +47,8 @@ export default {
     font-family: 'Open Sans', sans-serif;
     color: #272726;
   }
+
+  html, body {
+    overflow-x: hidden!important;
+  }
 </style>
