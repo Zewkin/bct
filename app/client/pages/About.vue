@@ -19,8 +19,8 @@
         </div>
         <div>
             <img :src="require('../../assets/images/Genadz_Korshunau.jpg')" alt="Геннадий Коршунов Gennady Korshunov" :class="$style.left">
-            <h2>Gennady Korshunov</h2>
-            <p>Gennady Korshunov is a senior researcher at the Center for New Ideas. He specializes in public opinion research, analyzes the social consequences of digitalization, and studies the sociology of revolutions and the media. Before joining the Center for New Ideas, he worked as director of the Institute of Sociology of the National Academy of Sciences of Belarus. Due to repression in Belarus, he was forced to resign and leave the country.
+            <h2>Henadz Korshunau</h2>
+            <p>Henadz Korshunauы is a senior researcher at the Center for New Ideas. He specializes in public opinion research, analyzes the social consequences of digitalization, and studies the sociology of revolutions and the media. Before joining the Center for New Ideas, he worked as director of the Institute of Sociology of the National Academy of Sciences of Belarus. Due to repression in Belarus, he was forced to resign and leave the country.
 In 2007, he defended his PhD thesis in sociological sciences at the Belarusian State University (Minsk, Belarus).</p>
         </div>
         <div>
