@@ -1,28 +1,50 @@
 <template>
-  <div>
-    <div :class="$style.links">
-      <router-link to="/" :class="$style.link">Main</router-link>
-      <router-link to="/about" :class="$style.link">About</router-link>
+  <div :class="$style.container">
+    <Header />
+    <div :class="$style.contentWrapper">
+      <router-view></router-view>
     </div>
-    <router-view></router-view>
+    <Footer />
   </div>
 </template>
 
+<script>
+import Header from './client/components/Header.vue';
+import Footer from './client/components/Footer.vue';
+export default {
+  components: {
+    Header,
+    Footer
+  }
+}
+</script>
+
 <style module>
-.link {
-  border: 1px solid rgba(65, 86, 255, 0.79);
-  padding: 8px;
-  color: #394fcc;
-  text-decoration: none;
+
+.container {
+  width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
 }
 
-.links {
-  margin: 16px 0 56px;
+.contentWrapper {
+  flex: 1;
 }
 </style>
 
 <style>
+  /* @import url('https://fonts.cdnfonts.com/css/raleway-5'); */
+
   body {
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #272726;
   }
 </style>

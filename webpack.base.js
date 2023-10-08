@@ -23,13 +23,49 @@ let config = {
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         use: {
-          loader: 'url-loader',
+          loader: 'file-loader',
           options: {
-            limit: 10000,
-            name: 'images/[name].[hash:8].[ext]',
-          },
+            limit: 1000000,
+            name: 'images/[name].[ext]',
+            esModule: false
+          }
         },
       },
+      {
+        test: /\.(pdf)(\?.*)?$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            limit: 1000000,
+            name: 'issues/[name].[hash:8].[ext]',
+            esModule: false
+          }
+        },
+      },
+      {
+        test: /\.(zip)(\?.*)?$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            limit: 10000000,
+            name: 'data/[name].[ext]',
+            esModule: false
+          }
+        },
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'vue-style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              modules: true
+            }
+          },
+          'sass-loader'
+        ]
+      }
     ],
   },
   plugins: [

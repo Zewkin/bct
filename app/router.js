@@ -11,8 +11,10 @@ export function createRouter() {
   return new Router({
     mode: 'history',
     routes: [
-      { path: routes.pages.main, component: () => import('./client/components/Main.vue') },
-      { path: routes.pages.about, component: () => import('./client/components/About.vue') },
+      { path: routes.pages.main, component: () => import('./client/pages/Homepage.vue') },
+      { path: routes.pages.about, component: () => import('./client/pages/About.vue') },
+      { path: routes.pages.issue, component: () => import('./client/pages/Issue.vue') },
+      { path: '/', redirect: '/en/' }
     ],
   });
 }

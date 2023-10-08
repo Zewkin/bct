@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Shopping list</h1>
+    <!-- <h1>Shopping list</h1>
     <div v-for="item in items" v-bind:key="item.id" :class="$style.item">
       <span>{{ item.title }}</span>
       <span>
@@ -20,7 +20,7 @@
         <div :class="$style.postTitle">{{ item.title }}</div>
         <div :class="$style.postBody">{{ item.body }}</div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
+    <link rel="icon" href="/favicon.png" type="image/png">
     
     {{{ meta.inject().title.text() }}}
     {{{ meta.inject().meta.text() }}}
@@ -15,5 +15,17 @@
 <div id="app"><!--vue-ssr-outlet--></div>
 {{{ renderState() }}}
 {{{ renderScripts() }}}
+<style>
+    .v-hl-container > * {
+        width: 288.75px;
+        margin-right: 15px;
+    }
+    .v-hl-container *:last-child {
+        margin-right: 0;
+    }
+    .v-hl-btn {
+        margin-bottom: 55px;
+    }
+</style>
 </body>
 </html>

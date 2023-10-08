@@ -40,14 +40,14 @@ if (!isProduction) {
   config = merge(config, {
     output: {
       filename: '[name].js',
-      publicPath: 'http://localhost:9999/dist/',
+      publicPath: 'http://0.0.0.0:9999/dist/',
     },
     plugins: [new webpack.HotModuleReplacementPlugin()],
     devtool: 'source-map',
     devServer: {
       writeToDisk: true,
       contentBase: path.resolve(__dirname, 'dist'),
-      publicPath: 'http://localhost:9999/dist/',
+      publicPath: 'http://0.0.0.0:9999/dist/',
       hot: true,
       inline: true,
       historyApiFallback: true,

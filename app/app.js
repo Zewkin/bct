@@ -5,6 +5,13 @@ import { createRouter } from './router';
 import { createStore } from './client/store';
 
 import App from './App.vue';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faFilePdf } from '@fortawesome/free-regular-svg-icons'
+
+library.add(faFilePdf);
+
+Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 export function createApp() {
   const router = createRouter();

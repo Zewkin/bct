@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import main from './modules/main';
+import issues from './modules/issues';
+import video from './modules/video';
 
 import config from '../../config';
 
@@ -12,7 +13,8 @@ export function createStore() {
     strict: !config.isProduction,
 
     modules: {
-      main,
+      issues,
+      video
     },
   });
 }

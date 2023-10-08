@@ -2,7 +2,8 @@
 
 export default {
   pages: {
-    about: '/about/',
-    main: '/',
+    about: '/:locale/about/',
+    main: '/:locale/',
+    issue: '/:locale/issue/:id/',
   },
 };
