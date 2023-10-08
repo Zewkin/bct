@@ -16,7 +16,7 @@
     <nav role="navigation" :class="$style.nav">
         <ul>
             <li :class="$style.homelink">
-                <router-link to="/">{{$route.params.locale == 'en' ? 'Homepage' : 'Галоўная'}}</router-link></li>
+                <router-link :to="'/' + $route.params.locale">{{$route.params.locale == 'en' ? 'Homepage' : 'Галоўная'}}</router-link></li>
             <!-- <li>
                 {{$route.params.locale == 'en' ? 'Topics' : 'Тэмы'}}
                 <ul>
