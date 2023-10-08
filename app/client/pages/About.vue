@@ -7,6 +7,7 @@
             <p>To address these challenges, our five Belarusian experts produce a quarterly analytical report, the Belarus Change Tracker. The idea behind this product is to record and analyse more general trends in place of observers’ usual focus on individual events and the noise of daily information. The team includes two political analysts, two sociologists and economist. They are Pavel Slunkin, visiting fellow at the European Council on Foreign Relations; Artyom Shraibman, founder of the Sense Analytics consultancy; Philipp Bikanau, independent sociologist; Henadz Korshunau, programme director of Belaruskaya Akademia and senior analyst at the Center for New Ideas; Lev Lvovskiy, academic director at BEROC. Kateryna Bornukova, former academic director at BEROC, contributed to the first five editions of our report.</p>
             <p>The analytical “zest” of our report is an exclusive quarterly opinion poll that enables us to record shifts in public opinion across different segments of Belarusian society.</p>
         </div>
+        <br />
         <div>
             <img :src="require('../../assets/images/Artsiom_Shraibman.jpg')" alt="Артём Шрайбман Artyom Shraibman" :class="$style.left">
             <h2>Artyom Shraibman</h2>
@@ -20,7 +21,7 @@
         <div>
             <img :src="require('../../assets/images/Genadz_Korshunau.jpg')" alt="Геннадий Коршунов Gennady Korshunov" :class="$style.left">
             <h2>Henadz Korshunau</h2>
-            <p>Henadz Korshunauы is a senior researcher at the Center for New Ideas. He specializes in public opinion research, analyzes the social consequences of digitalization, and studies the sociology of revolutions and the media. Before joining the Center for New Ideas, he worked as director of the Institute of Sociology of the National Academy of Sciences of Belarus. Due to repression in Belarus, he was forced to resign and leave the country.
+            <p>Henadz Korshunau is a senior researcher at the Center for New Ideas. He specializes in public opinion research, analyzes the social consequences of digitalization, and studies the sociology of revolutions and the media. Before joining the Center for New Ideas, he worked as director of the Institute of Sociology of the National Academy of Sciences of Belarus. Due to repression in Belarus, he was forced to resign and leave the country.
 In 2007, he defended his PhD thesis in sociological sciences at the Belarusian State University (Minsk, Belarus).</p>
         </div>
         <div>
