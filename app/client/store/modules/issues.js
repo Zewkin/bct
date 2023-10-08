@@ -45,7 +45,7 @@ export default {
       {
         id: 5,
         title_en: 'Belarus Change Tracker #5',
-        title_be: 'Беларускі трэкер с #5',
+        title_be: 'Беларускі трэкер перамен #5',
         month: '2023-05',
         url: 'may-2023',
         pdf_en: 'May_2023_EN.pdf',
