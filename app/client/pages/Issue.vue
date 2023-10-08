@@ -1,8 +1,13 @@
 <template>
     <div :class="$style.issue">
-        <div>
+        <div :class="$style.header">
             <h1>{{ $route.params.locale == 'en' ? issue.title_en : issue.title_be }}</h1>
-            <div :class="$style.date">{{ date }}</div>
+            <div style="display: flex; flex-direction: row; align-items: center;">
+                <div :class="$style.date">{{ date }}</div>
+                <a target="_blank" :href="require(`../../assets/issues/${$route.params.locale == 'en' ? issue.pdf_en : issue.pdf_be}`)" :class="$style.pdflink" :alt="$route.params.locale == 'en' ? issue.title_en : issue.title_be">
+                    <font-awesome-icon icon="fa-regular fa-file-pdf" />
+                </a>
+            </div>
             <!-- <a :href="require(`../../assets/issues/${$route.params.locale == 'en' ? issue.pdf_en : issue.pdf_be}`)">Test</a> -->
         </div>
         <client-only>
@@ -50,6 +55,16 @@ export default {
 .issue {
     display: block;
 
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @media screen and (max-width: 1199px) {
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+
     h1 {
         float: left;
         @media screen and (max-width: 1199px) {
@@ -57,10 +72,19 @@ export default {
         }
     }
 
+    .pdflink {
+        color: #d50023;
+        float: left;
+        font-size: 24px;
+        @media screen and (max-width: 1199px) {
+            margin: 0 0 10px 20px;
+            display: inline-block;
+        }
+    }
+
     .date {
         float: left;
-        margin-left: 30px;
-        margin-top: 33px;
+        margin: 0 30px;
         color: darkgrey;
         font-weight: 100;
         @media screen and (max-width: 1199px) {
