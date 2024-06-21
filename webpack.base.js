@@ -54,17 +54,6 @@ let config = {
         },
       },
       {
-        test: /\.(xml)(\?.*)?$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            limit: 10000000,
-            name: '[name].[ext]',
-            esModule: false
-          }
-        },
-      },
-      {
         test: /\.scss$/,
         use: [
           'vue-style-loader',
