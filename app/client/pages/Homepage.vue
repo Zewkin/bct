@@ -55,7 +55,7 @@ export default {
         VideoItem
     },
     metaInfo: {
-        title: 'Belarus Change Tracker'
+        title: 'Belarus Change Tracker | Беларусский Трекер Перемен'
     },
     computed: {
         ...mapState('issues', {
