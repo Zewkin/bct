@@ -71,6 +71,16 @@ export default {
         pdf_en: 'May_2024_EN.pdf',
         pdf_be: 'May_2024_RU.pdf',
         image: 'seventh.jpg'
+      },
+      {
+        id: 8,
+        title_en: 'Belarus Change Tracker #8',
+        title_be: 'Беларускі трэкер перамен #8',
+        month: '2024-12',
+        url: 'december-2024',
+        pdf_en: 'December_2024_EN.pdf',
+        pdf_be: 'December_2024_RU.pdf',
+        image: 'eighth.png'
       }
     ]
   }

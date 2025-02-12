@@ -37,7 +37,7 @@ let config = {
           loader: 'file-loader',
           options: {
             limit: 1000000,
-            name: 'issues/[name].[hash:8].[ext]',
+            name: 'issues/[name].[ext]',
             esModule: false
           }
         },

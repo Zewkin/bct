@@ -49,6 +49,14 @@ export default {
           month: '2023-08',
           url: 'https://www.youtube.com/watch?v=rIUSvkHuuUU',
           image: 'sixth_v.jpg'
+        },
+        {
+          id: 8,
+          title_en: 'Belarus Change Tracker #8',
+          title_be: 'Беларускі трэкер перамен #8',
+          month: '2024-12',
+          url: 'https://www.youtube.com/watch?v=UgZ-IvwlJBA',
+          image: 'eighth_v.png'
         }
       ]
     }
